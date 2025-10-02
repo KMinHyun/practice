@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import '../App.jsx';
+import RouteSearch from '../components/RouteSearch.jsx';
+import App from '../App.jsx';
 
 const router = createBrowserRouter([
   {
@@ -7,7 +8,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Main />
+        element: <RouteSearch />
       }
    ]
   }
